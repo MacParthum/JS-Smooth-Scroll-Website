@@ -32,7 +32,7 @@
   
   #navbar__logo {
     background-color: #121212;
-    background-image: linear-gradient(to top, #0890ff 10%, #fff 20%, #fcb045 30%, #0890ff 100%);
+    background-image: linear-gradient(to top, #1034b4 0%,  #5f90df 80%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -86,9 +86,10 @@
       border: none;
       outline: none;
       border-radius: 4px;
-      background: #0890ff;
-      background: -webkit-linear-gradient(to right, #fcb045, #121212, #301ed3);
-      background: linear-gradient(to right, #fcb045, #fff, #301ed3);
+      background: #0575E6;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #021B79, #0575E6, #021b79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
       color: #fff;
       transition: all 0.3s ease;
   }
@@ -97,3 +98,5 @@
       color: #0890ff;
       transition: all 0.3s ease;
   }
+
+  
